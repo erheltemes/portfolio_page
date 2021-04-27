@@ -1,12 +1,18 @@
 const highlight = {
-    title: "U.S. Representative Net Worth Comparision",
-    discription: "Javascript/jQuery, Server-side APIs, Local Storage",
-    link: "https://erheltemes.github.io/us_representative_lunchables/",
-    img: "assets/img/screenshot02.jpg",
+    title: "Study Session Planning Site",
+    discription: "MVC file structure, SQL database connection, Handlebars",
+    link: "https://mysterious-bayou-93387.herokuapp.com/",
+    img: "assets/img/study_buddy.jpg",
 }
 
 
 const workSamples = [
+    {
+        title: "Employee Tracker",
+        discription: "SQL Database, CRUD features using Inquirer",
+        link: "https://github.com/erheltemes/employee_tracker.git",
+        img: "assets/img/employee_tracker.PNG",
+    },
     {
         title: "Weather Dashboard",
         discription: "Server-side APIs, Javascript/jQuery, CSS, Local Storage",
@@ -51,4 +57,8 @@ workSamples.forEach(object => {
         .append($("<p>").addClass("ws-dis").text(object.discription)
         )
     )
+})
+
+$("#send-email").click(function(){
+    window.alert("Email Sent")
 })
